@@ -111,41 +111,5 @@ const WORKS = [
       { src: "images/07-a.jpg", alt: "Fenster nach Süden, Gesamtansicht" },
       { src: "images/07-b.jpg", alt: "Fenster nach Süden, Detail" }
     ]
-  },
-  {
-    title: "Ufer II",
-    year: 2024,
-    medium: "Acryl auf Leinwand",
-    size: "50 × 70 cm",
-    price: 900,
-    status: "available",
-    images: [
-      { src: "images/08-a.jpg", alt: "Ufer II, Gesamtansicht" }
-    ]
-  },
-  {
-    title: "Garten im August",
-    year: 2023,
-    medium: "Öl auf Leinwand",
-    size: "80 × 80 cm",
-    price: 1600,
-    status: "sold",
-    images: [
-      { src: "images/09-a.jpg", alt: "Garten im August, Gesamtansicht" },
-      { src: "images/09-b.jpg", alt: "Garten im August, Detail" }
-    ]
-  },
-  {
-    title: "Weg nach Hause",
-    year: 2023,
-    medium: "Öl auf Leinwand",
-    size: "60 × 80 cm",
-    price: 1100,
-    status: "available",
-    images: [
-      { src: "images/10-a.jpg", alt: "Weg nach Hause, Gesamtansicht" },
-      { src: "images/10-b.jpg", alt: "Weg nach Hause, Detail" },
-      { src: "images/10-c.jpg", alt: "Weg nach Hause, im Raum" }
-    ]
   }
 ];
