@@ -130,7 +130,10 @@
     WORKS.forEach(function (work, wi) {
       var views = buildViews(work.images, function (i) { openLightbox(work, i); }, wi > 0);
 
-      var priceText = work.status === "sold" ? "" : (work.price ? EUR.format(work.price) : "Preis auf Anfrage");
+      // PREIS – derzeit ausgeblendet (reine Präsentation, kein Verkauf).
+      // Zum Wiedereinschalten diese Zeile und die zwei Zeilen unten bei "PREIS" aktivieren
+      // (die "//" am Anfang entfernen) und dann das Impressum auf § 5 DDG erweitern.
+      // var priceText = work.status === "sold" ? "" : (work.price ? EUR.format(work.price) : "Preis auf Anfrage");
       var metaParts = [work.medium, work.size].filter(Boolean).join(", ");
 
       var caption = el("div", { "class": "caption" }, [
@@ -139,8 +142,11 @@
           work.year ? el("span", { "class": "year", text: String(work.year) }) : null
         ]),
         metaParts ? el("p", { "class": "meta", text: metaParts }) : null,
-        priceText ? el("p", { "class": "price", text: priceText }) : null,
-        work.status ? el("p", { "class": "status " + work.status, text: STATUS[work.status] || work.status }) : null,
+        // PREIS + Status (verfügbar/verkauft/reserviert) – zum Wiedereinschalten die nächsten
+        // zwei Zeilen aktivieren und die Zeile "nur ausgestellt" darunter löschen.
+        // priceText ? el("p", { "class": "price", text: priceText }) : null,
+        // work.status ? el("p", { "class": "status " + work.status, text: STATUS[work.status] || work.status }) : null,
+        work.status === "exhibited" ? el("p", { "class": "status exhibited", text: STATUS.exhibited }) : null, // nur ausgestellt
         work.status === "exhibited" && work.where ? el("p", { "class": "where", text: work.where }) : null,
         work.note ? el("p", { "class": "note", text: work.note }) : null
       ]);

@@ -11,9 +11,11 @@
 //    medium  – z. B. "Öl auf Leinwand"
 //    size    – z. B. "80 × 100 cm"
 //    price   – Zahl in Euro, z. B. 1200. Leer lassen (null) für
-//              "Preis auf Anfrage".
+//              "Preis auf Anfrage". Wird derzeit nicht angezeigt
+//              (auskommentiert in app.js, Stichwort "PREIS").
 //    status  – "available" (verfügbar), "sold" (verkauft),
-//              "reserved" (reserviert) oder "exhibited" (ausgestellt)
+//              "reserved" (reserviert) oder "exhibited" (ausgestellt).
+//              Derzeit wird nur "ausgestellt" angezeigt.
 //    where   – nur bei "exhibited": wo das Werk gerade hängt
 //    note    – optionaler kurzer Text zum Werk
 //    images  – Liste der Bilder, erstes Bild = Hauptansicht.
