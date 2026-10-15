@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabine Hoess – Malerei</title>
+  <meta name="description" content="Sabine Hoess, Malerin. Aktuelle Arbeiten, Ausstellungen und Kontakt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">Sabine Hoess</a>
+    <button class="burger" aria-label="Menü" aria-expanded="false" aria-controls="menu">
+      <svg class="lines" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav>
+      <ul class="menu" id="menu">
+        <li><a href="gallery.html">Arbeiten</a></li>
+        <li><a href="#ueber">Über mich</a></li>
+        <li><a href="#ausstellungen">Ausstellungen</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <h1>Sabine Hoess</h1>
+    <div class="text">
+      <p class="lead">
+        Schön, dass Sie hier sind. Ich male Landschaften, Stillleben und das Licht
+        dazwischen – meist in Öl, manchmal in Aquarell. Auf dieser Seite finden Sie
+        eine Auswahl aktueller Arbeiten, kommende Ausstellungen und einen Weg, mich
+        zu erreichen.
+      </p>
+      <p><a href="gallery.html">Zu den Arbeiten</a></p>
+    </div>
+
+    <figure class="hero-image">
+      <img src="images/01-a.jpg" alt="Morgen am Fluss, Öl auf Leinwand, 2026" width="1600" height="1200">
+      <figcaption>Morgen am Fluss, Öl auf Leinwand, 100 × 80 cm, 2026</figcaption>
+    </figure>
+  </section>
+
+  <section class="section wrap" id="ueber">
+    <h2>Über mich</h2>
+    <div class="text">
+      <p>
+        Ich lebe und arbeite in Südhessen. Zur Malerei bin ich über das Zeichnen gekommen,
+        und bis heute beginnt fast jedes Bild mit einem Spaziergang und einem Skizzenbuch.
+        Mich interessiert, wie sich ein Ort verändert, wenn das Licht wandert – die gleiche
+        Flussbiegung morgens um sieben und abends um acht sind zwei verschiedene Bilder.
+      </p>
+      <p>
+        Meine Arbeiten sind in Öl oder Acryl auf Leinwand und Holz, kleinere Formate auch
+        als Aquarell auf Papier. Jedes Werk ist ein Unikat, signiert und datiert.
+      </p>
+    </div>
+  </section>
+
+  <section class="section wrap" id="ausstellungen">
+    <h2>Ausstellungen</h2>
+    <ul class="shows">
+      <li>
+        <time datetime="2026-11">Nov–Dez 2026</time>
+        <div>
+          <strong>Licht und Fluss – Einzelausstellung</strong>
+          <span>Galerie am Markt, Darmstadt. Vernissage am 14. November, 18 Uhr.</span>
+        </div>
+      </li>
+      <li>
+        <time datetime="2027-03">März 2027</time>
+        <div>
+          <strong>Offene Ateliers Bergstraße</strong>
+          <span>Mein Atelier ist am 20. und 21. März von 11 bis 18 Uhr geöffnet.</span>
+        </div>
+      </li>
+      <li>
+        <time datetime="2026-05">Mai 2026</time>
+        <div>
+          <strong>Gruppenausstellung „Zwischenland“</strong>
+          <span>Kunstverein Bensheim. Beendet.</span>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section wrap contact" id="kontakt">
+    <h2>Kontakt</h2>
+    <div class="text">
+      <p>
+        Wenn Sie ein Werk kaufen, eine Auftragsarbeit besprechen oder einfach mein Atelier
+        besuchen möchten, schreiben Sie mir gerne.
+      </p>
+      <p class="big"><a href="mailto:post@sabine-hoess.art">post@sabine-hoess.art</a></p>
+      <p>Atelierbesuche nach Vereinbarung.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot wrap">
+  <span>© <span id="year"></span> Sabine Hoess. Alle Rechte vorbehalten.</span>
+  <a href="impressum.html">Impressum &amp; Datenschutz</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
