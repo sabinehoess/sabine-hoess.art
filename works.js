@@ -30,23 +30,23 @@ const WORKS = [
     year: 2023,
     medium: "Aquarell auf 640gr Aquarellkarton",
     size: "104 × 76 cm",
-    price: 4500 grau rosa,
+    price: 4500, // grau rosa
     status: "available",
     where: "Künstlerhaus Marktoberdorf – bis Januar 2027",
     images: [
-      { src: "Werk Grau Rosa gekreutz b2.jpg", alt: "Morgen am Fluss, Gesamtansicht" }
+      { src: "images/01-a.jpg", alt: "o.T., Aquarell in Grau und Rosa, 2023" }
     ]
   },
   {
     title: "o.T.",
     year: 2023,
     medium: "Aquarell auf 640g Aquarellkarton",
-    size: "104 × 76 ",
-    price: 4300 bunt,
+    size: "104 × 76 cm",
+    price: 4300, // bunt
     status: "exhibited",
     where: "Künstlerhaus Marktoberdorf – bis Januar 2027",
     images: [
-      { src: "Werk mit Streifen_2.jpg", alt: "Stilles Feld, Gesamtansicht" }
+      { src: "images/02-a.jpg", alt: "o.T., farbiges Aquarell mit Streifen, 2023" }
     ]
   }
 ];

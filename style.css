@@ -5,13 +5,13 @@
 :root {
   --paper: #f2f1ee;
   --paper-deep: #e7e6e1;
-  --ink: #262626;
-  --mute: #6f6e6a;
+  --ink: #1f2f4a;          /* dunkelblau */
+  --mute: #5f6a7a;
   --rule: #d6d5cf;
-  --link: #3a4d6b;
+  --link: #2f5d9e;
   --ok: #4e7556;
 
-  --font: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font: "Arial Narrow", "Liberation Sans Narrow", Arial, Helvetica, sans-serif;
   --measure: 36rem;        /* text column, ~65 characters */
   --wide: 68rem;           /* image column */
   --gutter: 1.25rem;
@@ -32,9 +32,9 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font);
+  font-stretch: condensed;
   font-size: 1.125rem;
-  line-height: 1.55;
-  font-optical-sizing: auto;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -44,8 +44,8 @@ a { color: var(--link); text-decoration: underline; text-underline-offset: 0.18e
 a:hover { color: var(--ink); }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
-h1, h2, h3 { font-weight: 400; line-height: 1.15; margin: 0; letter-spacing: -0.005em; }
-h1 { font-size: clamp(2.4rem, 7vw, 4.25rem); }
+h1, h2, h3 { font-weight: 400; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2.2rem, 6.5vw, 3.75rem); }
 h2 { font-size: clamp(1.6rem, 3.2vw, 2.1rem); }
 h3 { font-size: 1.35rem; }
 p { margin: 0 0 1em; }
@@ -67,7 +67,7 @@ p { margin: 0 0 1em; }
 }
 .brand {
   color: var(--ink); text-decoration: none;
-  font-size: 1.25rem; letter-spacing: 0.01em;
+  font-size: 1.25rem; letter-spacing: 0.02em;
 }
 .menu { display: flex; gap: 1.75rem; list-style: none; margin: 0; padding: 0; }
 .menu a { color: var(--mute); text-decoration: none; font-size: 1.05rem; }
@@ -107,7 +107,7 @@ p { margin: 0 0 1em; }
 .hero .lead { font-size: clamp(1.2rem, 2.2vw, 1.45rem); line-height: 1.45; color: var(--ink); }
 
 .hero-image { margin: clamp(2rem, 5vw, 4rem) 0 0; }
-.hero-image img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--paper-deep); }
+.hero-image img { width: auto; max-width: 100%; max-height: 85vh; }
 .hero-image figcaption { margin-top: 0.6rem; font-size: 0.95rem; color: var(--mute); }
 
 .section { padding: clamp(2.5rem, 6vw, 5rem) 0; border-top: 1px solid var(--rule); }
@@ -198,7 +198,7 @@ p { margin: 0 0 1em; }
   align-items: baseline;
 }
 .caption p { margin: 0; }
-.caption h3 { grid-column: 1; grid-row: 1; font-style: italic; }
+.caption h3 { grid-column: 1; grid-row: 1; }
 .caption h3 .year { font-style: normal; color: var(--mute); font-size: 1.05rem; margin-left: 0.5em; }
 .caption .meta { grid-column: 1; grid-row: 2; color: var(--mute); font-size: 1rem; }
 .caption .price { grid-column: 2; grid-row: 1; text-align: right; white-space: nowrap; }
