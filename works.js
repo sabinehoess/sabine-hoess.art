@@ -32,7 +32,7 @@ const WORKS = [
     size: "104 × 76 cm",
     price: 4500 grau rosa,
     status: "available",
-    where: "Künstlerhaus Marktoberdorf – bis Dezember 2026",
+    where: "Künstlerhaus Marktoberdorf – bis Januar 2027",
     images: [
       { src: "Werk Grau Rosa gekreutz b2.jpg", alt: "Morgen am Fluss, Gesamtansicht" }
     ]
@@ -44,7 +44,7 @@ const WORKS = [
     size: "104 × 76 ",
     price: 4300 bunt,
     status: "exhibited",
-    where: "Künstlerhaus Marktoberdorf – bis Dezember 2026",
+    where: "Künstlerhaus Marktoberdorf – bis Januar 2027",
     images: [
       { src: "Werk mit Streifen_2.jpg", alt: "Stilles Feld, Gesamtansicht" }
     ]
