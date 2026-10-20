@@ -2,6 +2,13 @@
    sabine-hoess.art – Stylesheet
    ------------------------------------------------------------ */
 
+/* Schrift: IBM Plex Sans Condensed, selbst gehostet (Lizenz: fonts/OFL.txt) */
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  src: url("fonts/ibm-plex-sans-condensed-400.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+
 :root {
   --paper: #f2f1ee;
   --paper-deep: #e7e6e1;
@@ -11,8 +18,8 @@
   --link: #2f5d9e;
   --ok: #4e7556;
 
-  --font: "Arial Narrow", "Liberation Sans Narrow", Arial, Helvetica, sans-serif;
-  --measure: 36rem;        /* text column, ~65 characters */
+  --font: "IBM Plex Sans Condensed", "Arial Narrow", Arial, Helvetica, sans-serif;
+  --measure: 46rem;        /* text column (narrow font, ~85 characters) */
   --wide: 68rem;           /* image column */
   --gutter: 1.25rem;
   --nav-h: 3.75rem;
@@ -32,7 +39,6 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font);
-  font-stretch: condensed;
   font-size: 1.167rem;     /* 14 pt */
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
