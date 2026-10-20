@@ -33,7 +33,7 @@ body {
   color: var(--ink);
   font-family: var(--font);
   font-stretch: condensed;
-  font-size: 1.125rem;
+  font-size: 1.167rem;     /* 14 pt */
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
