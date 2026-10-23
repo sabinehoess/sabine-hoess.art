@@ -27,7 +27,8 @@ const SHOWS = [
     datetime: "2026-11",
     title: "78. Große Schwäbische Kunstausstellung | Kunstsammlungen und Museen Augsburg",
     text: "Vernissage am 28. November in der Augsburger Kunsthalle im Glaspalast, 11 Uhr.",
-    link: "https://kunstsammlungen-museen.augsburg.de/78-grosse-schwaebische"
+    link: "https://kunstsammlungen-museen.augsburg.de/78-grosse-schwaebische",
+    works: true
   },
   {
     id: "marktoberdorf-2026",

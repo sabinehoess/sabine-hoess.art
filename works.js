@@ -27,6 +27,28 @@
 const WORKS = [
   {
     title: "o.T.",
+    medium: "Aquarell auf 640gr Aquarellkarton",
+    size: "104 × 76 cm",
+    price: null,
+    status: "exhibited",
+    where: "Kunsthalle im Glaspalast, Augsburg – bis März 2027",
+    images: [
+      { src: "images/03-a.jpg", alt: "o.T., Aquarell mit waagrechten Bändern in Apricot und Grauviolett" }
+    ]
+  },
+  {
+    title: "o.T.",
+    medium: "Aquarell auf 640gr Aquarellkarton",
+    size: "104 × 76 cm",
+    price: null,
+    status: "exhibited",
+    where: "Kunsthalle im Glaspalast, Augsburg – bis März 2027",
+    images: [
+      { src: "images/04-a.jpg", alt: "o.T., Aquarell mit Gitterstruktur in Apricot und Grauviolett" }
+    ]
+  },
+  {
+    title: "o.T.",
     year: 2023,
     medium: "Aquarell auf 640gr Aquarellkarton",
     size: "104 × 76 cm",
