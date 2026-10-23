@@ -39,7 +39,7 @@ const SHOWS = [
     id: "herrsching-2023",
     date: "Jul–Sep 2023",
     datetime: "2023-07",
-    title: "Einzelausstellung im Haus der Bayerischen Landwirtschaft",
+    title: "Einzelausstellung im Haus der Bayerischen Landwirtschaft, Tutzing",
     images: [
       { src: "images/ausstellungen/2023-herrsching-01.jpg", alt: "Ausstellungsansicht" },
       { src: "images/ausstellungen/2023-herrsching-02.jpg", alt: "Ausstellungsansicht" },
