@@ -155,6 +155,49 @@
     });
   }
 
+  /* ---------- Ausstellungen ---------- */
+  function showInfo(show) {
+    return el("span", null, [
+      show.text ? document.createTextNode(show.text + " ") : null,
+      show.link ? el("a", { href: show.link, text: "Link zur Veranstaltung" }) : null
+    ]);
+  }
+
+  // Kurze Liste auf der Startseite
+  var showsList = document.getElementById("shows-list");
+  if (showsList && typeof SHOWS !== "undefined") {
+    SHOWS.forEach(function (show) {
+      var hasImages = show.images && show.images.length;
+      showsList.appendChild(el("li", null, [
+        el("time", { datetime: show.datetime || "", text: show.date }),
+        el("div", null, [
+          el("strong", { text: show.title }),
+          showInfo(show),
+          hasImages ? el("span", null, [el("a", { href: "ausstellungen.html#" + show.id, text: "Bilder aus der Ausstellung ansehen" })]) : null
+        ])
+      ]));
+    });
+  }
+
+  // Eigene Seite mit Fotos
+  var showsPage = document.getElementById("shows");
+  if (showsPage && typeof SHOWS !== "undefined") {
+    SHOWS.forEach(function (show, si) {
+      var hasImages = show.images && show.images.length;
+      var views = hasImages ? buildViews(show.images, function (i) { openLightbox(show, i); }, si > 0) : null;
+      showsPage.appendChild(el("article", { "class": "show", id: show.id }, [
+        el("time", { datetime: show.datetime || "", text: show.date }),
+        el("h2", { text: show.title }),
+        (show.text || show.link) ? el("p", { "class": "show-info" }, [showInfo(show)]) : null,
+        views ? views.root : null,
+        views ? views.dots : null
+      ]));
+    });
+    // Inhalt entsteht erst per JS – Sprungziel (#herrsching-2023 o. ä.) danach anfahren
+    var target = location.hash && document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView();
+  }
+
   /* Jahr in der Fußzeile */
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();

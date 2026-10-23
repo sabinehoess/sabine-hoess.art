@@ -128,7 +128,16 @@ p { margin: 0 0 1em; }
 .shows li:last-child { border-bottom: 1px solid var(--rule); }
 .shows time { color: var(--mute); font-size: 1rem; line-height: 1.6; }
 .shows strong { font-weight: 400; display: block; }
-.shows span { color: var(--mute); font-size: 1rem; }
+.shows span { display: block; color: var(--mute); font-size: 1rem; }
+.shows-more { margin-top: 1.2rem; }
+
+/* Seite "Ausstellungen" */
+.show { padding: clamp(2rem, 5vw, 4rem) 0; }
+.show + .show { border-top: 1px solid var(--rule); }
+.show time { display: block; color: var(--mute); font-size: 1rem; margin-bottom: 0.3rem; }
+.show h2 { margin-bottom: 0.5rem; }
+.show .show-info { color: var(--mute); font-size: 1rem; max-width: var(--measure); }
+.show .views { margin-top: 1.5rem; }
 @media (max-width: 30em) {
   .shows li { grid-template-columns: 1fr; gap: 0.15rem; }
 }
