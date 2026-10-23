@@ -13,6 +13,8 @@
 //    title    – Name der Ausstellung
 //    text     – optional, z. B. Vernissage-Termin und Ort
 //    link     – optional, Webseite der Veranstaltung
+//    works    – optional, true = Hinweis "Die ausgestellten Werke finden
+//               Sie unter Arbeiten" mit Link zur Galerie
 //    images   – optional, Fotos aus der Ausstellung. Bilddateien liegen
 //               im Ordner "images/ausstellungen". Gibt es Fotos, steht
 //               auf der Startseite "Bilder aus der Ausstellung ansehen".
@@ -33,7 +35,8 @@ const SHOWS = [
     datetime: "2026-11",
     title: "48. Ostallgäuer Kunstausstellung",
     text: "Vernissage am 28. Oktober im Künstlerhaus Marktoberdorf, 18 Uhr.",
-    link: "https://www.kuenstlerhaus-marktoberdorf.de/"
+    link: "https://www.kuenstlerhaus-marktoberdorf.de/",
+    works: true
   },
   {
     id: "herrsching-2023",

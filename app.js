@@ -159,7 +159,12 @@
   function showInfo(show) {
     return el("span", null, [
       show.text ? document.createTextNode(show.text + " ") : null,
-      show.link ? el("a", { href: show.link, text: "Link zur Veranstaltung" }) : null
+      show.link ? el("a", { href: show.link, text: "Link zur Veranstaltung" }) : null,
+      show.works ? el("span", { "class": "show-works" }, [
+        document.createTextNode("Die ausgestellten Werke finden Sie unter "),
+        el("a", { href: "gallery.html", text: "Arbeiten" }),
+        document.createTextNode(".")
+      ]) : null
     ]);
   }
 
